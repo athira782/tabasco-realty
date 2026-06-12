@@ -33,16 +33,23 @@ $old    = session()->getFlashdata('old') ?? [];
                     </div>
 
                     <!-- Email -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label fw-semibold" style="font-size: 14px; color: #333;">Email
-                            <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control <?= isset($errors['email']) ? 'is-invalid' : '' ?>"
-                            id="email" name="email" value="<?= esc($old['email'] ?? ($user['email'] ?? '')) ?>"
-                            <?= $mode === 'edit' ? 'readonly style="background: #f8f9fa; color: #6c757d;"' : 'required' ?>>
-                        <?php if (isset($errors['email'])): ?>
-                        <div class="invalid-feedback"><?= esc($errors['email']) ?></div>
-                        <?php endif; ?>
-                    </div>
+                       <!-- Email -->
+                  <div class="mb-3">
+    <label for="email" class="form-label fw-semibold" style="font-size: 14px; color: #333;">
+        Email <span class="text-danger">*</span>
+    </label>
+
+    <input type="email"
+        class="form-control <?= isset($errors['email']) ? 'is-invalid' : '' ?>"
+        id="email"
+        name="email"
+        value="<?= esc($old['email'] ?? ($user['email'] ?? '')) ?>"
+        required>
+
+    <?php if (isset($errors['email'])): ?>
+        <div class="invalid-feedback"><?= esc($errors['email']) ?></div>
+    <?php endif; ?>
+</div>
 
                     <!-- Password -->
                     <div class="mb-3">

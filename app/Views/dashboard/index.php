@@ -22,7 +22,7 @@ $allowedModules = array_filter($modules, function ($slug) {
 <!-- ─── WELCOME BANNER ─── -->
 <div class="card border-0 shadow-sm mb-4" style="border-radius: 14px; border-left: 4px solid #e65c00 !important;">
     <div class="card-body py-4">
-        <h4 class="fw-bold mb-1" style="color: #1a1a2e;">Welcome back, <?= esc($name) ?></h4>
+        <h4 class="fw-bold mb-1">Welcome back, <?= esc($name) ?></h4>
         <p class="mb-0 text-muted" style="font-size: 14px;">
             <?= esc(ucfirst(str_replace('_', ' ', $role))) ?> · <?= esc(ucfirst($system)) ?> system
         </p>
@@ -40,7 +40,7 @@ $allowedModules = array_filter($modules, function ($slug) {
                 </div>
                 <div>
                     <p class="text-muted small mb-0" style="font-size: 12px;">Total Projects</p>
-                    <h5 class="fw-bold mb-0" style="color: #1a1a2e;">—</h5>
+                    <h5 class="fw-bold mb-0">—</h5>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@ $allowedModules = array_filter($modules, function ($slug) {
                 </div>
                 <div>
                     <p class="text-muted small mb-0" style="font-size: 12px;">Active Units</p>
-                    <h5 class="fw-bold mb-0" style="color: #1a1a2e;">—</h5>
+                    <h5 class="fw-bold mb-0">—</h5>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@ $allowedModules = array_filter($modules, function ($slug) {
                 </div>
                 <div>
                     <p class="text-muted small mb-0" style="font-size: 12px;">Sales This Month</p>
-                    <h5 class="fw-bold mb-0" style="color: #1a1a2e;">—</h5>
+                    <h5 class="fw-bold mb-0">—</h5>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ $allowedModules = array_filter($modules, function ($slug) {
                 </div>
                 <div>
                     <p class="text-muted small mb-0" style="font-size: 12px;">Collections</p>
-                    <h5 class="fw-bold mb-0" style="color: #1a1a2e;">—</h5>
+                    <h5 class="fw-bold mb-0">—</h5>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ $allowedModules = array_filter($modules, function ($slug) {
 
 <!-- ─── QUICK LINKS ─── -->
 <?php if (!empty($allowedModules)): ?>
-<h5 class="fw-bold mb-3" style="color: #1a1a2e;">Quick Links</h5>
+<h5 class="fw-bold mb-3">Quick Links</h5>
 <div class="row g-3 mb-4">
     <?php foreach ($allowedModules as $slug => $module): ?>
     <div class="col-6 col-md-4 col-lg-3">
@@ -105,7 +105,7 @@ $allowedModules = array_filter($modules, function ($slug) {
                         style="width: 52px; height: 52px; background: #fff0e0;">
                         <i class="bi <?= $module['icon'] ?>" style="font-size: 24px; color: #e65c00;"></i>
                     </div>
-                    <h6 class="fw-semibold mb-2" style="color: #1a1a2e; font-size: 14px;"><?= esc($module['label']) ?>
+                    <h6 class="fw-semibold mb-2" style="font-size: 14px;"><?= esc($module['label']) ?>
                     </h6>
                     <span style="font-size: 12px; color: #e65c00; font-weight: 600;">View &rarr;</span>
                 </div>
@@ -117,7 +117,7 @@ $allowedModules = array_filter($modules, function ($slug) {
 <?php endif; ?>
 
 <!-- ─── RECENT ACTIVITY ─── -->
-<h5 class="fw-bold mb-3" style="color: #1a1a2e;">Recent Activity</h5>
+<h5 class="fw-bold mb-3">Recent Activity</h5>
 <div class="card border-0 shadow-sm" style="border-radius: 14px;">
     <div class="card-body text-center py-5">
         <i class="bi bi-clock-history" style="font-size: 40px; color: #adb5bd;"></i>
